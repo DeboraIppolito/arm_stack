@@ -1,0 +1,7 @@
+<launch>
+	<node name="listener" pkg="arm_controller" type="arm_controller_node" output="screen"/>
+	<node name="controller_J0" pkg="arm_controller" type="arm_controller_J0" output="screen"/>
+	<node name="controller_J1" pkg="arm_controller" type="arm_controller_J1" output="screen"/>
+	<node name="controller_J2" pkg="arm_controller" type="arm_controller_J2" output="screen"/>
+	<node name="controller_J3" pkg="arm_controller" type="arm_controller_J3" output="screen"/>	
+</launch>
