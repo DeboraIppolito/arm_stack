@@ -12,7 +12,6 @@
     
     
     <!-- Spawn controllers - it uses a position Controller for each joint -->
-    
     <group ns="$(arg robot_name)">
         <include file="$(find arm_control)/launch/arm_control.launch">
             <arg name="hardware_interface" value="$(arg hardware_interface)" />

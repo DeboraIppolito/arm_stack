@@ -2,8 +2,11 @@
 
 <robot name="arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+<!-- includiamo la macro di gazebo -->
 <xacro:include filename="$(find arm_description)/urdf/arm.gazebo.xacro"/>
+<!-- includiamo la macro delle trasmissioni -->
 <xacro:include filename="$(find arm_description)/urdf/arm.transmission.xacro"/>
+<!-- includiamo la macro della camera scaricata da github -->
 <xacro:include filename="$(find arm_description)/urdf/camera.xacro"/>
 
   <link name="base_link">
@@ -405,15 +408,14 @@
   </link>
   
   
-  <!-- camera -->
-  
+  <!-- camera joint -->
   <joint name="camera_joint" type="fixed">
     <parent link="base_link"/>
     <child link="camera_link"/>
     <origin xyz="0 0 0" rpy="0 0 0"/>
   </joint>
   
-  
+  <!-- camera link -->
   <link name="camera_link">
     <visual>
       <geometry>

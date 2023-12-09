@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+<!-- Creiamo una macro contenente tutti i tag delle trasmission dei 4 giunti-->
   <xacro:macro name="arm_transmission" params="hardware_interface:=PositionJointInterface robot_name:=arm">
   
       <transmission name="${robot_name}_tran_0">

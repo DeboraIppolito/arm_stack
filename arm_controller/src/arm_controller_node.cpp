@@ -33,11 +33,11 @@ int main(int argc, char **argv) {
  // Creazione di un vettore di 4 elementi di tipo std_msgs::Float64
     std::vector<std_msgs::Float64> msg_vector(4);
 
-    // Assegnazione di valori ai singoli elementi del vettore
-    msg_vector[0].data = 1.6;
+    // // Assegnazione di valori ai singoli elementi del vettore
+    msg_vector[0].data = 1;
     msg_vector[1].data = -1;
     msg_vector[2].data = 1.3;
-    msg_vector[3].data = -1;
+    msg_vector[3].data = -1.2;
 
     // Publish to all joint controllers
     arm_J0_pub.publish(msg_vector[0]);

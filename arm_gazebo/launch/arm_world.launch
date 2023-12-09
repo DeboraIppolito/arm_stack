@@ -13,8 +13,7 @@
     <arg name="robot_name" default="arm" />
     <arg name="model" default="arm"/>
     
-    <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
-   
+    <!-- Lanciamo il world-->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <!--arg name="world_name" value="$(find _gazebo)/worlds/iiwa.world"/-->
         <arg name="debug" value="$(arg debug)" />
