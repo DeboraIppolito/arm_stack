@@ -11,3 +11,4 @@ Per vedere l'immagine della camera --> rqt_image_view
 Punto 4: 
 Aprire gazebo
 Lanciare i nodi --> rosrun arm_controller arm_controller_node
+Per vedere cosa sto pubblicando --> rostopic echo /arm/PositionJointInterface_J0_controller/command
